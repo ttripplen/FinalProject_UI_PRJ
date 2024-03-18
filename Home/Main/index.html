@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <header>
             <nav>
@@ -22,12 +23,21 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#locate">Locations &amp; Hours</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="/LoginPage/index.html">Log In</a></li>
                 </ul>
                 <div id="utility">
                     <i class='bx bx-search-alt' id="search-icon" style="font-size: 24px;"></i>
                     <div class="icon-cart">
 
-                    </div><i class='bx bx-cart-alt' id="cart" style="font-size: 24px;"></i></div>
+                    </div><i class='bx bx-cart-alt' id="cart" style="font-size: 24px;"></i>
+                    <div class="dropdown">
+                        <img class="dropbtn" src="/Home/Image/Avt/avt-11.png">
+                        <div class="dropdown-content">
+                            <a href="/LoginPage/index.html">Log out</a>
+                        </div>
+                    </div>
+
+                </div>
                 <!--Search box-->
                 <div class="search-box">
                     <input type="search" name="" id="" placeholder="Search here ...">
@@ -105,7 +115,7 @@
                     </div>
                     <div class="btnCart ">
                         <button class="close" id="close" style="border-radius: 0; border: none; ">CLOSE</button>
-                        <button class="checkout" style="border-radius: 0; border: none; "><a href="/Home/Checkout/checkout.html">CHECK OUT</a></button>
+                        <button class="checkout" style="border-radius: 0; border: none; "><a href="/Checkout/checkout.html">CHECK OUT</a></button>
                     </div>
                 </div>
 
@@ -263,6 +273,13 @@
             </ul>
         </section>
         <!--PRODUCT-->
+        <div id="popup" class="popup-container popup-style">
+            <div class="popup-content">
+                <a href="#products" class="close">&times;</a>
+                <h3>Notification:</h3>
+                <p>Hii! Product successfully added to cart!</p>
+            </div>
+        </div>
         <section class="product" id="products">
             <h2>Our Products</h2>
             <div class="listProduct">
@@ -271,7 +288,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
                 <div class="item">
@@ -279,7 +296,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
                 <div class="item">
@@ -287,7 +304,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
                 <div class="item">
@@ -295,7 +312,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
                 <div class="item">
@@ -303,7 +320,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
                 <div class="item">
@@ -311,7 +328,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
                 <div class="item">
@@ -319,7 +336,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
                 <div class="item">
@@ -327,7 +344,7 @@
                     <h4 class="item-name">NAME PRODUCT</h4>
                     <div class="price">$200</div>
                     <button class="addCart">
-                Add To Cart
+                        <a href="#popup" class="link-add">Add To Cart</a>
             </button>
                 </div>
             </div>
@@ -454,6 +471,7 @@
     </div>
 
     <script src="main.js "></script>
+
 </body>
 
 </html>

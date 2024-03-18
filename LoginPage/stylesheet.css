@@ -30,6 +30,64 @@ body {
     padding: 30px;
 }
 
+.corner-button {
+    position: absolute;
+    /* Đặt vị trí tuyệt đối cho nút */
+    top: 10px;
+    /* Đặt top để nút cách mép trên 10px */
+    left: 10px;
+    /* Đặt left để nút cách mép trái 10px */
+}
+
+.icon-item {
+    list-style: none
+}
+
+.icon-link {
+    display: inline-flex;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--text-01);
+    width: 5rem;
+    height: 5rem;
+    transition: .5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto
+}
+
+.icon-link:hover {
+    color: #fff;
+}
+
+.icon-link i {
+    margin: auto;
+}
+
+.icon-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 5rem;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+}
+
+.icon-link:hover::before {
+    transform: scale(1);
+}
+
+.icon-item a:hover:before {
+    background: #ECBD73;
+}
+
 .container {
     position: relative;
     max-width: 850px;

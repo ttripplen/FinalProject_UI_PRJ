@@ -32,7 +32,7 @@
     padding-bottom: 20px;
 }
 
-.checkoutLayout .form .group:nth-child(-n+3) {
+.checkoutLayout .form .group {
     grid-column-start: 1;
     grid-column-end: 3;
 }
