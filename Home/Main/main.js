@@ -39,17 +39,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function increaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('number').value = value;
-}
+document.addEventListener("DOMContentLoaded", function() {
+    // Lấy ra các div giảm và tăng số lượng sản phẩm
+    var decreaseButtons = document.querySelectorAll('#decrease');
+    var increaseButtons = document.querySelectorAll('#increase');
 
-function decreaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value < 1 ? value = 1 : '';
-    value--;
-    document.getElementById('number').value = value;
-}
+    // Lặp qua từng div giảm và thêm sự kiện click
+    decreaseButtons.forEach(function(div) {
+        div.addEventListener('click', function() {
+            var quantityElement = div.nextElementSibling; // Lấy phần tử input chứa số lượng
+            var currentQuantity = parseInt(quantityElement.value); // Lấy số lượng hiện tại
+            if (currentQuantity > 0) {
+                quantityElement.value = currentQuantity - 1; // Giảm số lượng đi 1
+            }
+        });
+    });
+
+    // Lặp qua từng div tăng và thêm sự kiện click
+    increaseButtons.forEach(function(div) {
+        div.addEventListener('click', function() {
+            var quantityElement = div.previousElementSibling; // Lấy phần tử input chứa số lượng
+            var currentQuantity = parseInt(quantityElement.value); // Lấy số lượng hiện tại
+            quantityElement.value = currentQuantity + 1; // Tăng số lượng đi 1
+        });
+    });
+});
