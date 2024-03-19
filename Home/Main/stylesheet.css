@@ -536,7 +536,7 @@ ul.services {
     margin-top: 15px;
     border: none;
     cursor: pointer;
-    margin-left: 75px;
+    margin-left: 55px;
 }
 
 .listProduct .item button:hover {
@@ -624,7 +624,7 @@ footer .social-links a {
 }
 
 .social-links a.facebook:hover {
-    background-color: #3b5998
+    background-color: #3b5998;
 }
 
 .social-links a.twitter:hover {
@@ -1268,4 +1268,157 @@ footer .f-right {
 .link-add {
     color: inherit;
     text-decoration: none;
+}
+
+
+/*test*/
+
+form {
+    width: 300px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+
+/*login button*/
+
+.icon-item {
+    list-style: none
+}
+
+.icon-link {
+    display: inline-flex;
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--text-01);
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: .5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+.icon-link:hover {
+    color: #fff;
+}
+
+.icon-link i {
+    margin: auto;
+}
+
+.icon-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+}
+
+.icon-link:hover::before {
+    transform: scale(1);
+}
+
+.icon-item a:hover:before {
+    background: #ECBD73;
+}
+
+.icon-item i:hover:before {
+    color: #fff;
+}
+
+
+/*button increase/decrease*/
+
+form {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.value-button {
+    display: inline-block;
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0;
+    background: #EDDAA9;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form #decrease {
+    margin-right: -5px;
+    border-radius: 8px 0 0 8px;
+    font-size: 12px;
+}
+
+form #increase {
+    margin-left: -5px;
+    border-radius: 0 8px 8px 0;
+    font-size: 12px;
+}
+
+form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+input#number {
+    text-align: center;
+    border: none;
+    border-top: 2px solid var(--light-01);
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    background-color: var(--light-01);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
